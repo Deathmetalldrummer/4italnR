@@ -1,0 +1,49 @@
+<!--<div class="layout">-->
+<!--  <div class="layout__bar bar">-->
+<!--    <div class="bar__left">-->
+<!--      <ng-content select="[slot-bar-left],[slot=bar-left]"></ng-content>-->
+<!--    </div>-->
+<!--    <div class="bar__center">-->
+<!--      <ng-content select="[slot-bar-center],[slot=bar-center]"></ng-content>-->
+<!--    </div>-->
+<!--    <div class="bar__right">-->
+<!--      <ng-content select="[slot-bar-right],[slot=bar-right]"></ng-content>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="layout__box">-->
+<!--    <div class="layout__menu">-->
+<!--      <ng-content select="[slot-menu],[slot=menu]"></ng-content>-->
+<!--    </div>-->
+<!--    <div class="layout__content">-->
+<!--      <ng-content select="[slot-content],[slot=content]"></ng-content>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="layout">
+  <div class="layout__ sidebar">
+    <div class="sidebar__ sidebar__start">
+      <ng-content select="[slot-sidebar-start],[slot=sidebar-start]"></ng-content>
+    </div>
+    <div class="sidebar__ sidebar__middle">
+      <ng-content select="[slot-sidebar-middle],[slot=sidebar-middle]"></ng-content>
+    </div>
+    <div class="sidebar__ sidebar__end">
+      <ng-content select="[slot-sidebar-end],[slot=sidebar-end]"></ng-content>
+    </div>
+  </div>
+  <div class="layout__ content">
+    <header class="content__ content__header header">
+      <div class="header__ header__top">
+        <ng-content select="[slot-header-top],[slot=header-top]"></ng-content>
+      </div>
+      <div class="header__ header__bottom">
+        <ng-content select="[slot-header-bottom],[slot=header-bottom]"></ng-content>
+      </div>
+    </header>
+    <main class="content__ content__main main">
+      <ng-content select="[slot-main],[slot=main]"></ng-content>
+    </main>
+  </div>
+</div>

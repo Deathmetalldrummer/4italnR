@@ -1,0 +1,12 @@
+<div class="search-box">
+  <input
+    type="text"
+    placeholder="Поиск"
+    [value]="keyword()"
+    (input)="updateKeyword($any($event.target).value)"
+    (keyup.enter)="searchNow()"
+  />
+  <button (click)="searchNow()" aria-label="Search">
+    <nr-icons name="search"></nr-icons>
+  </button>
+</div>

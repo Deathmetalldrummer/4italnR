@@ -1,0 +1,28 @@
+<!--<div class="basket">-->
+<div class="basket__imageBox">
+  <img [alt]="basket.title" [src]="basket.cover" />
+</div>
+<div class="basket__infoBox">
+  <div class="basket__infoLeft">
+    <div class="basket__infoTop">
+      <span class="basket__title">{{ basket.title }}</span>
+    </div>
+    <div class="basket__infoCenter">цена: {{ basket.price }} ₽
+    </div>
+    <div class="basket__infoBottom">
+      <div class="basket__count">Количество:
+        <nr-input-step (changed)="inputStepChanged($event)"
+                       [value]="basket?.count || 1"></nr-input-step>
+      </div>
+    </div>
+  </div>
+  <div class="basket__infoRight">
+    <div class="basket__infoTop">
+      <div class="basket__price">{{ basket.price * (basket?.count || 1) }} ₽</div>
+    </div>
+    <div class="basket__infoBottom">
+      <div (click)="remove(basket.id)" class="basket__actions">удалить</div>
+    </div>
+  </div>
+</div>
+<!--</div>-->

@@ -1,0 +1,6 @@
+<div class="products" *ngIf="products$().length">
+    <rg-product-card-add *ngIf="isAdmin" class="product"></rg-product-card-add>
+    <div *ngFor="let item of products$()" class="product">
+        <rg-product-card [product]="item" (actionClick)="addToCart($event)"></rg-product-card>
+    </div>
+</div>

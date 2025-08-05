@@ -1,0 +1,32 @@
+.menu
+  position: relative
+  margin: 10px 0
+  &:after, &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    left: 0
+    right: 0
+    height: 4px
+    border: none
+    border-top: 1px solid #141824
+    border-bottom: 1px solid #282f41
+  &:after
+    top: 100%
+  &:before
+    bottom: 100%
+.menu__
+  display: flex
+  flex-flow: row nowrap
+  transition-duration: 0.3s
+  padding: 10px 20px
+  text-decoration: none
+  color: #78829d
+  &.active
+    background-color: #15a4fa
+    color: #fff
+.menu__icon
+.menu__label
+  text-transform: capitalize
+

@@ -1,0 +1,8 @@
+<div class="basketList">
+    <nr-basket-card
+        *ngFor="let item of basket"
+        [data]="item"
+        (del)="remove($event)"
+        (countChange)="countChange($event, item)"
+        class="basketList__"></nr-basket-card>
+</div>

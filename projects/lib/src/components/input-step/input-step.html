@@ -1,0 +1,9 @@
+<div class="inputStep">
+  <button (click)="minus()" class="inputStep__btn inputStep__minus">
+    <nr-icons name="minus"></nr-icons>
+  </button>
+  <input [ngModel]="value" (ngModelChange)="onChanged($event)" class="inputStep__field" maxlength="5" type="text">
+  <button (click)="plus()" class="inputStep__btn inputStep__plus">
+    <nr-icons name="plus"></nr-icons>
+  </button>
+</div>

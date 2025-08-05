@@ -1,0 +1,27 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    <span>Обложка (url):</span>
+    <input class="field" formControlName="cover" type="url" />
+  </label>
+  <label>
+    <span>Название:</span>
+    <input class="field" formControlName="title" />
+  </label>
+  <label>
+    <span>Автор:</span>
+    <input class="field" formControlName="author" />
+  </label>
+  <label>
+    <span>Цена:</span>
+    <input class="field" formControlName="price" type="number" />
+  </label>
+  <label>
+    <span>Рейтинг:</span>
+    <input class="field" formControlName="rate" type="number" min="0" max="5" step="0.1" />
+  </label>
+  <label>
+    <span>Описание:</span>
+    <textarea class="field" formControlName="description"></textarea>
+  </label>
+  <button type="submit" [disabled]="form.invalid">Сохранить</button>
+</form>

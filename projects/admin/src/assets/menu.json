@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Фантастика",
+    "path": "fantastika"
+  },
+  {
+    "title": "Детектив",
+    "path": "detektiv"
+  },
+  {
+    "title": "Научная литература",
+    "path": "nauchnaya-literatura"
+  },
+  {
+    "title": "История",
+    "path": "istoriya"
+  },
+  {
+    "title": "Бизнес",
+    "path": "biznes"
+  },
+  {
+    "title": "Саморазвитие",
+    "path": "samorazvitie"
+  },
+  {
+    "title": "Психология",
+    "path": "psikhologiya"
+  },
+  {
+    "title": "Искусство",
+    "path": "iskusstvo"
+  },
+  {
+    "title": "Философия",
+    "path": "filosofiya"
+  },
+  {
+    "title": "Здоровье",
+    "path": "zdorove"
+  },
+  {
+    "title": "Художественная литература",
+    "path": "khudozhestvennaya-literatura"
+  },
+  {
+    "title": "Поэзия",
+    "path": "poeziya"
+  },
+  {
+    "title": "Компьютеры",
+    "path": "kompyutery"
+  },
+  {
+    "title": "Дети",
+    "path": "deti"
+  },
+  {
+    "title": "Путешествия",
+    "path": "puteshestviya"
+  }
+]

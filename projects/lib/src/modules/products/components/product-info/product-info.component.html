@@ -1,0 +1,18 @@
+<div class="productInfo" *ngIf="product()">
+  <div class="productInfo__ productInfo__imageBox">
+    <img class="productInfo__image" [alt]="product().title" [src]="product().cover" />
+  </div>
+  <div class="productInfo__ productInfo__infoBox">
+    <h1 class="productInfo__title">{{product().title}}</h1>
+    <div class="productInfo__author">Автор: {{product().author}}</div>
+    <div class="productInfo__price"><span>Цена: </span><span>{{product().price}} ₽</span></div>
+    <nr-rate [rate]="product().rate" class="productInfo__rate"></nr-rate>
+    <!--  <div class="productInfo__categories">{{this.product().categories}}</div>-->
+    <button type="button" (click)="addToCart()" class="productInfo__button">Купить</button>
+    <button [routerLink]="['edit']" type="button" class="productInfo__button" *ngIf="isAdmin">Редактировать</button>
+  </div>
+  <div class="productInfo__ productInfo__descBox">
+    <h3 class="productInfo__descriptionTitle">Описание</h3>
+    <div class="productInfo__description">{{this.product().description}}</div>
+  </div>
+</div>

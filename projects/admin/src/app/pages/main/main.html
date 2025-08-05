@@ -1,0 +1,18 @@
+<nr-layout>
+  <nr-logo slot="sidebar-start" class="main__logo"></nr-logo>
+  <div slot="header-top" class="headerTop">
+    <h2 slot="header-top" class="headerTop__ headerTop__1">TODO: title</h2>
+    <nr-menu-basket [count]="basketCount()" slot="header-top" class="headerTop__ headerTop__2"></nr-menu-basket>
+  </div>
+  <nr-menu [menu]="menu" slot="sidebar-middle"></nr-menu>
+  <div slot="header-bottom" class="main__header2">
+    <div class="main__header2_ main__header2_1">
+      <span>Все книги</span>
+      <span>Последние</span>
+      <span>Популярные</span>
+      <span>Бесплатные</span>
+    </div>
+    <div class="main__header2_ main__header2_2"><nr-search (keywordChange)="onKeyword($event)"></nr-search></div>
+  </div>
+  <router-outlet slot="main"></router-outlet>
+</nr-layout>

@@ -1,0 +1,21 @@
+<div class="cart">
+    <div class="card__image">
+        <img [alt]="product.title" [src]="product.cover" [routerLink]="['/book', product.id]" />
+    </div>
+<!--  ₽-->
+    <div class="cart__content">
+        <div class="cart__title" [routerLink]="['/book', product.id]">{{ product.title }}</div>
+        <div class="cart__author">{{ product.author }}</div>
+        <div class="cart__rate">
+          <nr-rate [rate]="product.rate"></nr-rate>
+        </div>
+
+<!--        <div class="cart__price">{{ product.price }} ₽</div>-->
+    </div>
+<!--    <div class="cart__actions">-->
+<!--        <button class="cart__action action" type="button" (click)="addToCart()">-->
+<!--            <nr-icons class="action__icon" name="cart"></nr-icons>-->
+<!--            <span class="action__text">В корзину</span>-->
+<!--        </button>-->
+<!--    </div>-->
+</div>

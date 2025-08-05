@@ -1,0 +1,11 @@
+<div *ngIf="count() > 0" class="cart cart_link" routerLink="/basket">
+  <ng-template [ngTemplateOutlet]="cart"></ng-template>
+</div>
+<div *ngIf="count() === 0" class="cart">
+  <ng-template [ngTemplateOutlet]="cart"></ng-template>
+</div>
+
+<ng-template #cart>
+  <span *ngIf="count() > 0" class="cart__count">{{ count() }}</span>
+  <nr-icons class="cart__icon" name="cart"></nr-icons>
+</ng-template>

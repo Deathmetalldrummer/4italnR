@@ -1,0 +1,6 @@
+<nav *ngIf="menuLength()" class="menu">
+  <a *ngFor="let item of menu()" [routerLink]="[item?.path]" routerLinkActive="active" class="menu__">
+    <nr-icons class="menu__icon" [name]="item.icon"></nr-icons>
+    <span class="menu__label">{{ item.title }}</span>
+  </a>
+</nav>

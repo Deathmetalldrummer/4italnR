@@ -1,0 +1,5 @@
+<div class="rate" [title]="rate()">
+  <nr-icons class="rate__ rate__full" name="star-full" *ngFor="let item of intArr"></nr-icons>
+  <nr-icons class="rate__ rate__half" name="star-half" *ngIf="fractional()"></nr-icons>
+  <nr-icons class="rate__ rate__null" name="star-null" *ngFor="let item of remainderArr"></nr-icons>
+</div>

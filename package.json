@@ -1,12 +1,14 @@
 {
-  "name": "4italn-r",
+  "name": "4italnr",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "ng serve app --port=4000 -o",
+    "start:admin": "ng serve admin --port=4001 -o",
+    "build": "ng build app",
+    "build:admin": "ng build admin",
+    "build:lib": "ng build nr",
+    "watch": "ng build nr --watch --configuration development"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular/build": "^20.1.4",
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@types/jasmine": "~5.1.0",
@@ -30,6 +33,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^20.1.0",
     "typescript": "~5.8.2"
   }
 }
